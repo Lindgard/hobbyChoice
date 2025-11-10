@@ -1,3 +1,6 @@
+const hobbiesList = document.getElementById("hobbyListPrint");
+const navbar = document.getElementById("navbar");
+
 const jsonData = async () => {
   try {
     const response = await fetch("./hobbies.json");
@@ -13,3 +16,7 @@ const jsonData = async () => {
 
 jsonData();
 // console.log(jsonData);
+for (let i = 0; i < jsonData.length; i++) {
+  //* create a loop that iterates new list items
+  //* for each hobby within the unordered list
+}
