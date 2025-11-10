@@ -1,0 +1,214 @@
+{
+  "hobbyer": {
+    "Kreative": [
+      {
+        "navn": "Tegning",
+        "beskrivelse": "Uttrykk kreativitet med blyant, kull eller digitalt verktøy."
+      },
+      {
+        "navn": "Maling",
+        "beskrivelse": "Bruk farger og pensler for å skape kunstverk på lerret."
+      },
+      {
+        "navn": "Fotografi",
+        "beskrivelse": "Fang øyeblikk og uttrykk stemninger gjennom bilder."
+      },
+      {
+        "navn": "Skriving",
+        "beskrivelse": "Formidle tanker, historier og ideer med ord."
+      },
+      {
+        "navn": "Keramikk",
+        "beskrivelse": "Lag bruksgjenstander eller kunst av leire som formes og brennes."
+      },
+      {
+        "navn": "Strikking",
+        "beskrivelse": "Skap klær, tepper og gaver med garn og pinner."
+      },
+      {
+        "navn": "Musikkproduksjon",
+        "beskrivelse": "Lag og miks musikk digitalt ved hjelp av programvare."
+      },
+      {
+        "navn": "Smykkelaging",
+        "beskrivelse": "Design og lag personlige smykker av ulike materialer."
+      },
+      {
+        "navn": "Origami",
+        "beskrivelse": "Brett papir til kunstferdige figurer uten lim eller saks."
+      },
+      {
+        "navn": "Calligrafi",
+        "beskrivelse": "Skriv vakker og dekorativ håndskrift med penn og blekk."
+      }
+    ],
+    "Sport_og_Friluft": [
+      {
+        "navn": "Løping",
+        "beskrivelse": "Tren kondisjon og utholdenhet ved å løpe i natur eller by."
+      },
+      {
+        "navn": "Sykling",
+        "beskrivelse": "Utforsk omgivelser eller tren kondisjon på to hjul."
+      },
+      {
+        "navn": "Fjelltur",
+        "beskrivelse": "Gå turer i skog og fjell for frisk luft og naturopplevelser."
+      },
+      {
+        "navn": "Svømming",
+        "beskrivelse": "Forbedre styrke og teknikk gjennom trening i vann."
+      },
+      {
+        "navn": "Klatring",
+        "beskrivelse": "Utfordre styrke og balanse ved å klatre på vegger eller stein."
+      },
+      {
+        "navn": "Ski",
+        "beskrivelse": "Nyt vinteren med langrenn eller alpint i snødekte omgivelser."
+      },
+      {
+        "navn": "Padling",
+        "beskrivelse": "Utforsk innsjøer og elver i kano, kajakk eller SUP-brett."
+      },
+      {
+        "navn": "Golf",
+        "beskrivelse": "Spill presisjonsidrett som kombinerer fokus og teknikk."
+      },
+      {
+        "navn": "Fiske",
+        "beskrivelse": "Slapp av ved vannet mens du prøver å fange fisk."
+      },
+      {
+        "navn": "Yoga",
+        "beskrivelse": "Kombiner bevegelse, pust og mental ro for balanse i kropp og sinn."
+      }
+    ],
+    "Teknologi_og_Gaming": [
+      {
+        "navn": "Programmering",
+        "beskrivelse": "Lær å skrive kode og lage egne apper eller spill."
+      },
+      {
+        "navn": "3D-printing",
+        "beskrivelse": "Design og skriv ut fysiske objekter med 3D-printere."
+      },
+      {
+        "navn": "Videospill",
+        "beskrivelse": "Fordyp deg i interaktive verdener og utfordr deg selv."
+      },
+      {
+        "navn": "VR-spill",
+        "beskrivelse": "Opplev spill og eventyr i virtuell virkelighet."
+      },
+      {
+        "navn": "Bygge PC-er",
+        "beskrivelse": "Sett sammen datamaskiner og lær om maskinvare."
+      },
+      {
+        "navn": "Robotikk",
+        "beskrivelse": "Bygg og programmer roboter som utfører oppgaver."
+      },
+      {
+        "navn": "Elektronikkprosjekter",
+        "beskrivelse": "Lag små tekniske enheter ved hjelp av sensorer og kretser."
+      },
+      {
+        "navn": "Droner",
+        "beskrivelse": "Fly droner for foto, filming eller racing."
+      },
+      {
+        "navn": "Streaming",
+        "beskrivelse": "Del spill, musikk eller hobbyer direkte med et publikum online."
+      },
+      {
+        "navn": "eSport",
+        "beskrivelse": "Konkurrer profesjonelt eller sosialt i videospill."
+      }
+    ],
+    "Samfunn_og_Kultur": [
+      {
+        "navn": "Språklæring",
+        "beskrivelse": "Lær nye språk for kommunikasjon og kulturforståelse."
+      },
+      {
+        "navn": "Reising",
+        "beskrivelse": "Utforsk nye steder, kulturer og mennesker."
+      },
+      {
+        "navn": "Matlaging",
+        "beskrivelse": "Lag deilige retter og eksperimenter med smaker."
+      },
+      {
+        "navn": "Vin- eller ølsmaking",
+        "beskrivelse": "Oppdag nye smaker og lær om bryggeprosesser."
+      },
+      {
+        "navn": "Historieutforskning",
+        "beskrivelse": "Lær om fortiden gjennom bøker, museer og dokumentarer."
+      },
+      {
+        "navn": "Frivillig arbeid",
+        "beskrivelse": "Bidra til samfunnet ved å hjelpe andre eller miljøet."
+      },
+      {
+        "navn": "Brettspill",
+        "beskrivelse": "Spill strategiske eller sosiale spill sammen med venner."
+      },
+      {
+        "navn": "Lese bøker",
+        "beskrivelse": "Fordyp deg i historier, fakta eller filosofi."
+      },
+      {
+        "navn": "Besøke museer",
+        "beskrivelse": "Utforsk kunst, vitenskap og kulturutstillinger."
+      },
+      {
+        "navn": "Teater",
+        "beskrivelse": "Opplev eller delta i levende scenekunst."
+      }
+    ],
+    "Avslapping_og_Livsstil": [
+      {
+        "navn": "Meditasjon",
+        "beskrivelse": "Finn ro gjennom fokusert pust og tilstedeværelse."
+      },
+      {
+        "navn": "Hagearbeid",
+        "beskrivelse": "Dyrk planter og blomster for glede og avslapping."
+      },
+      {
+        "navn": "Journaling",
+        "beskrivelse": "Skriv dagbok eller refleksjoner for selvinnsikt."
+      },
+      {
+        "navn": "Mindfulness",
+        "beskrivelse": "Øv på å være til stede i øyeblikket uten distraksjoner."
+      },
+      {
+        "navn": "DIY-prosjekter",
+        "beskrivelse": "Lag egne møbler, dekor eller gjenstander hjemme."
+      },
+      {
+        "navn": "Minimalisme",
+        "beskrivelse": "Lev enklere med færre eiendeler og mer fokus."
+      },
+      {
+        "navn": "Astrologi",
+        "beskrivelse": "Utforsk stjernetegn og horoskop for selvforståelse."
+      },
+      {
+        "navn": "Samle mynter eller frimerker",
+        "beskrivelse": "Bygg samlinger med historisk og estetisk verdi."
+      },
+      {
+        "navn": "Camping",
+        "beskrivelse": "Overnatt ute i naturen for å koble fra og lade opp."
+      },
+      {
+        "navn": "Aromaterapi",
+        "beskrivelse": "Bruk eteriske oljer for velvære og avslapning."
+      }
+    ]
+  }
+}
