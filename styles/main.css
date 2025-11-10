@@ -1,12 +1,36 @@
 :root {
-  --background-color: #246a73;
-  --dark-color: #23001e;
-  --bright-color: #f7f3e3;
-  --accent-color: #af9164;
+  --jade-color: #006a65;
+  --plum-color: #472243;
+  --silver-color: #a4a9ad;
+  --black-color: #000000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--jade-color);
+  font-family: "Inter";
+}
+
+.headline {
+  color: var(--plum-color);
+}
+
+a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+.hero-section {
+  height: 80vh;
+  background-color: var(--silver-color);
+}
+
+.list-section {
+  height: 60vh;
+  background-color: var(--silver-color);
 }
