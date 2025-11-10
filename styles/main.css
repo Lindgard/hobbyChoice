@@ -1,0 +1,12 @@
+:root {
+  --background-color: #246a73;
+  --dark-color: #23001e;
+  --bright-color: #f7f3e3;
+  --accent-color: #af9164;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
