@@ -18,35 +18,36 @@ const jsonData = async () => {
   }
 };
 
-const hobbyArray = await jsonData();
+const [title, navn, beskrivelse] = await jsonData();
 
-console.log(hobbyArray);
+console.log(jsonData.title);
+// console.log(hobbyArray);
 
-const categories = (data) => {
-  let arr = Object.keys(data);
-  let i = Math.floor(Math.random() * arr.length);
-  return arr[i];
-};
+// const categories = (data) => {
+//   let arr = Object.keys(data);
+//   let i = Math.floor(Math.random() * arr.length);
+//   return arr[i];
+// };
 
-console.log(categories(hobbyArray));
+// console.log(categories(hobbyArray));
 
-const randomHobby = (data) => {
-  const result = hobbyArray[categories(data)];
+// const randomHobby = (data) => {
+//   const result = hobbyArray[categories(data)];
 
-  let i = Math.floor(Math.random() * result.length);
-  return result[i];
-};
+//   let i = Math.floor(Math.random() * result.length);
+//   return result[i];
+// };
 
-console.log(randomHobby(hobbyArray));
+// console.log(randomHobby(hobbyArray));
 
 //* knapp som viser et resultat basert på randomHobby
 //* funksjonen som er skrevet over
-randomizerBtn.addEventListener("click", () => {
-  const hobby = randomHobby(hobbyArray);
-  txtBlock.classList.add("output-txt");
-  txtBlock.innerHTML = `${hobby.navn} <br> ${hobby.beskrivelse}`;
-  heroSection.appendChild(txtBlock);
-});
+// randomizerBtn.addEventListener("click", () => {
+//   const hobby = randomHobby(hobbyArray);
+//   txtBlock.classList.add("output-txt");
+//   txtBlock.innerHTML = `${hobby.navn} <br> ${hobby.beskrivelse}`;
+//   heroSection.appendChild(txtBlock);
+// });
 
 //* funksjon som skal vise en liste basert
 //* på kategoriene fra JSON fil

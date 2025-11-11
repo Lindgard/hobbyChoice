@@ -31,6 +31,6 @@ butikk: Vis en liste med produkter og deres priser
 - [ ] Inputfelt for å legge til andre hobbyer som kan appendes til array
 - [ ] Funksjon for å velge opptil 5 hobbyer som renderes ut til en egen liste
       som heter f.eks "mine hobbyer"
-- [ ] Generere ul-liste med hobbyer på nettsiden som er delt inn i kategorier
-- [ ] Lage ny h3 til hvert kategori-navn
-- [ ] lage klasse på hvert list element som genereres
+- [ ] Lage en div til hver h3 og ul som skal vises på siden via JS, fokusere på
+      selve strukturen
+- [ ] Legge til innholdet fra JSON-filen til div med h3 og ul i trinn over
