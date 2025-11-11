@@ -23,3 +23,11 @@ hva de ulike delene gjør. Eksempelideer: En enkel kunstgenerator: La brukeren
 velge antall sirkler eller firkanter, og vis dem dynamisk på siden. En
 hobbyvelger: Lag en funksjon som viser en tilfeldig hobby fra en liste. En liten
 butikk: Vis en liste med produkter og deres priser
+
+## TODO
+
+- [ ] Lage en knapp som henter ut et tilfeldig objekt fra array i JSON-fil
+- [ ] Skalere funksjonen til å hente ut mer enn kun ett objekt
+- [ ] Inputfelt for å legge til andre hobbyer som kan appendes til array
+- [ ] Funksjon for å velge opptil 5 hobbyer som renderes ut til en egen liste
+      som heter f.eks "mine hobbyer"
