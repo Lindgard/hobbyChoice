@@ -26,8 +26,11 @@ butikk: Vis en liste med produkter og deres priser
 
 ## TODO
 
-- [ ] Lage en knapp som henter ut et tilfeldig objekt fra array i JSON-fil
+- [x] Lage en knapp som henter ut et tilfeldig objekt fra array i JSON-fil
 - [ ] Skalere funksjonen til å hente ut mer enn kun ett objekt
 - [ ] Inputfelt for å legge til andre hobbyer som kan appendes til array
 - [ ] Funksjon for å velge opptil 5 hobbyer som renderes ut til en egen liste
       som heter f.eks "mine hobbyer"
+- [ ] Generere ul-liste med hobbyer på nettsiden som er delt inn i kategorier
+- [ ] Lage ny h3 til hvert kategori-navn
+- [ ] lage klasse på hvert list element som genereres
