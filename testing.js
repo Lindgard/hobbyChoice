@@ -18,9 +18,10 @@ const jsonData = async () => {
   }
 };
 
-const [title, navn, beskrivelse] = await jsonData();
+const hobbyArray = await jsonData();
 
-console.log(jsonData.title);
+hobbyArray{: {navn, beskrivelse}}
+
 // console.log(hobbyArray);
 
 // const categories = (data) => {
