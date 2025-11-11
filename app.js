@@ -45,8 +45,6 @@ randomizerBtn.addEventListener("click", () => {
   const hobby = randomHobby(hobbyArray);
   txtBlock.classList.add("output-txt");
   txtBlock.innerHTML = `${hobby.navn} <br> ${hobby.beskrivelse}`;
-  hobby.navn.classList.add("hobby-name");
-  hobby.beskrivelse.classList.add("hobby-description");
   heroSection.appendChild(txtBlock);
 });
 
@@ -54,10 +52,12 @@ randomizerBtn.addEventListener("click", () => {
 //* på kategoriene fra JSON fil
 const createListItem = () => {
   //? bruke array mapping?
-
-  newLi.innerText = `${hobbyArray.navn}`;
+  const hobbyCategories = Object.keys(hobbyArray);
+  newLi.innerText = `${hobbyCategories} `;
   hobbiesList.appendChild(newLi);
 };
+
+console.log(createListItem());
 
 //* console.log(data.hobbyer.[randomCategory][randomHobby]);
 
