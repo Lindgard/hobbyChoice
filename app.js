@@ -1,21 +1,21 @@
-const hobbiesList = document.getElementById("hobbyListPrint");
-const navbar = document.getElementById("navbar");
-const randomizerBtn = document.getElementById("randomizerBtn");
-const heroSection = document.getElementById("heroSection");
-const infoContainer = document.createElement("DIV");
-const txtBlock = document.createElement("P");
-const newH3 = document.createElement("H3");
+const hobbiesList = document.getElementById('hobbyListPrint');
+const navbar = document.getElementById('navbar');
+const randomizerBtn = document.getElementById('randomizerBtn');
+const heroSection = document.getElementById('heroSection');
+const infoContainer = document.createElement('DIV');
+const txtBlock = document.createElement('P');
+const newH3 = document.createElement('H3');
 
 const jsonData = async () => {
   try {
-    const response = await fetch("./hobbies.json");
+    const response = await fetch('./hobbies.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error('Error fetching data:', error);
   }
 };
 
@@ -34,24 +34,24 @@ console.log(Kreative);
 console.log(hobbyArray);
 
 const renderHobbiesList = (data) => {
-  hobbiesList.innerHTML = "";
+  hobbiesList.innerHTML = '';
 
   Object.entries(data).forEach(([kategori, aktiviteter]) => {
-    const categorySection = document.createElement("SECTION");
-    categorySection.classList.add("category-section");
+    const categorySection = document.createElement('SECTION');
+    categorySection.classList.add('category-section');
 
     const categoryHeader = newH3.cloneNode();
     const categoryTxtBlock = txtBlock.cloneNode();
 
-    categoryHeader.textContent = kategori.replaceAll("_", " ");
+    categoryHeader.textContent = kategori.replaceAll('_', ' ');
     categoryTxtBlock.textContent = `Antall aktiviteter: ${aktiviteter.length}`;
 
-    const hobbyUl = document.createElement("UL");
-    hobbyUl.classList.add("hobby-list");
+    const hobbyUl = document.createElement('UL');
+    hobbyUl.classList.add('hobby-list');
 
     aktiviteter.forEach(({ navn, beskrivelse }) => {
-      const hobbyLi = document.createElement("LI");
-      hobbyLi.classList.add("hobby-item");
+      const hobbyLi = document.createElement('LI');
+      hobbyLi.classList.add('hobby-item');
       hobbyLi.innerHTML = `<strong>${navn}<br>${beskrivelse}`;
       hobbyUl.appendChild(hobbyLi);
     });
@@ -63,8 +63,10 @@ const renderHobbiesList = (data) => {
   });
 };
 
-//* randomizer-funksjoner f
-// or kategori og objekt innen
+//? renderHobbiesList legger ikke faktisk til det den egentlig skal, aktiveres ikke. Finn ut
+//? hvor å sette inn aktiveringen av koden
+
+//* randomizer-funksjoner for kategori og objekt innen
 //* kategori fra første funksjonen under her
 const categories = (data) => {
   let arr = Object.keys(data);
@@ -85,9 +87,9 @@ console.log(randomHobby(hobbyArray));
 
 //* knapp som viser et resultat basert på randomHobby
 //* funksjonen som er skrevet over
-randomizerBtn.addEventListener("click", () => {
+randomizerBtn.addEventListener('click', () => {
   const hobby = randomHobby(hobbyArray);
-  txtBlock.classList.add("output-txt");
+  txtBlock.classList.add('output-txt');
   txtBlock.innerHTML = `${hobby.navn} <br> ${hobby.beskrivelse}`;
   heroSection.appendChild(txtBlock);
 });
@@ -102,22 +104,3 @@ const listInfo = () => {};
 //   newH3.innerText = `${hobbyCategories}`;
 //   hobbiesList.appendChild(newH3);
 // };
-
-// console.log(createListItem());
-
-//* console.log(data.hobbyer.[randomCategory][randomHobby]);
-
-// for (let i = 0; i < jsonData.length; i++) {
-//   //* create a loop that iterates new list items
-//   //* for each hobby within the unordered list
-// }
-
-//? Fischer-Yates Shuffle Algorithm attempt
-//* const randomCategory = (data) => {
-//*   for (let i = data.length - 1; i > 0; i--) {
-//*     let j = Math.floor(Math.random() * (i + 1));
-
-//*     [data[i], data[j]] = [data[j], data[i]];
-//*   }
-//* };
-//? console.log(randomCategory());
