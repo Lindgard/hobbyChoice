@@ -2,6 +2,7 @@ const hobbiesList = document.getElementById("hobbyListPrint");
 const navbar = document.getElementById("navbar");
 const randomizerBtn = document.getElementById("randomizerBtn");
 const heroSection = document.getElementById("heroSection");
+const infoContainer = document.createElement("DIV");
 const txtBlock = document.createElement("P");
 const newH3 = document.createElement("H3");
 
@@ -20,8 +21,51 @@ const jsonData = async () => {
 
 const hobbyArray = await jsonData();
 
+//! Destructuring av array fra JSON
+const {
+  Kreative,
+  Sport_og_Friluft,
+  Teknologi_og_Gaming,
+  Samfunn_og_Kultur,
+  Avslapping_og_Livsstil,
+} = hobbyArray;
+
+console.log(Kreative);
 console.log(hobbyArray);
 
+const renderHobbiesList = (data) => {
+  hobbiesList.innerHTML = "";
+
+  Object.entries(data).forEach(([kategori, aktiviteter]) => {
+    const categorySection = document.createElement("SECTION");
+    categorySection.classList.add("category-section");
+
+    const categoryHeader = newH3.cloneNode();
+    const categoryTxtBlock = txtBlock.cloneNode();
+
+    categoryHeader.textContent = kategori.replaceAll("_", " ");
+    categoryTxtBlock.textContent = `Antall aktiviteter: ${aktiviteter.length}`;
+
+    const hobbyUl = document.createElement("UL");
+    hobbyUl.classList.add("hobby-list");
+
+    aktiviteter.forEach(({ navn, beskrivelse }) => {
+      const hobbyLi = document.createElement("LI");
+      hobbyLi.classList.add("hobby-item");
+      hobbyLi.innerHTML = `<strong>${navn}<br>${beskrivelse}`;
+      hobbyUl.appendChild(hobbyLi);
+    });
+
+    categorySection.appendChild(categoryHeader);
+    categorySection.appendChild(categoryTxtBlock);
+    categorySection.appendChild(hobbyUl);
+    hobbiesList.appendChild(categorySection);
+  });
+};
+
+//* randomizer-funksjoner f
+// or kategori og objekt innen
+//* kategori fra første funksjonen under her
 const categories = (data) => {
   let arr = Object.keys(data);
   let i = Math.floor(Math.random() * arr.length);
@@ -47,6 +91,8 @@ randomizerBtn.addEventListener("click", () => {
   txtBlock.innerHTML = `${hobby.navn} <br> ${hobby.beskrivelse}`;
   heroSection.appendChild(txtBlock);
 });
+
+const listInfo = () => {};
 
 //* funksjon som skal vise en liste basert
 //* på kategoriene fra JSON fil
